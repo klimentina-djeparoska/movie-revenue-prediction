@@ -4,14 +4,18 @@
 TMDB Box Office Prediction
 
 1.	Abstraction
+
 Today, movies are getting more and more attention and grow in popularity. From comedy to science fiction they serve people as entertainment in their everyday life.
+
 TMDB Box Office Prediction is a project for trying to predict the revenue of a movie, based on the gathered data available from the TMDB dataset.
 Because the problem I will be trying to solve is prediction of a real value for the revenue, it will be solved using regression as part of the supervised learning.
 
 
  
 2.	Choosing features and preprocessing the data
-The available features from the Movies database are: 'id', 'belongs_to_collection', 'budget', 'genres', 'homepage', 'imdb_id', 'original_language', 'original_title', 'overview', 'popularity', 'poster_path', 'production_companies', 'production_countries', 'release_date', 'runtime', 'spoken_languages', 'status', 'tagline', 'title', 'Keywords', 'cast', 'crew', 'revenue'. 
+
+The available features from the Movies database are: 
+- 'id', 'belongs_to_collection', 'budget', 'genres', 'homepage', 'imdb_id', 'original_language', 'original_title', 'overview', 'popularity', 'poster_path', 'production_companies', 'production_countries', 'release_date', 'runtime', 'spoken_languages', 'status', 'tagline', 'title', 'Keywords', 'cast', 'crew', 'revenue'. 
 
 Here are the features that were chosen to be used in building the model and a short explanation why and the way it is processed in the code:
 
