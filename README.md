@@ -39,7 +39,7 @@ Here are the features that were chosen to be used in building the model and a sh
 
 -production_countries: the country where the movie is produced in, it is done a mapping for the shortcuts of the countries with numbers and then those numbers are translated to binary
 
--release_date: the date the movie is released. From here only the year is taken into account. It is divided in periods let say from 1940 to 2960 and so on. Because now we are watching more movies that in the past 
+-release_date: the date the movie is released. From here only the year is taken into account. It is divided in periods let say from 1910 to 2020 and so on. Because now we are watching more movies that in the past 
 
 -runtime: the length of time of the movie. It is also divided in intervals a good movie is usually between 90min and 120min
 
