@@ -1,5 +1,7 @@
 # movie-revenue-prediction
 
+Dataset: https://www.kaggle.com/c/tmdb-box-office-prediction/data
+
  
 TMDB Box Office Prediction
 
