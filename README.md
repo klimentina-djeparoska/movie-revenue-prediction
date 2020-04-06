@@ -60,9 +60,9 @@ The following columns are dropped:
 
 - it has two dense layers with 8 units each
 
--and one output layer that returns a single continues value
+- and one output layer that returns a single continues value
 
--the dataset is divided to train and test, 0.7 and 0.3 accordingly
+- the dataset is divided to train and test, 0.7 and 0.3 accordingly
 
 a)	for training the model, model.fit function is used also from Keras library, which trains the model for a fixed number of epochs (the iterations on the dataset)
 
