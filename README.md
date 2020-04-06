@@ -16,30 +16,48 @@ The available features from the Movies database are: 'id', 'belongs_to_collectio
 Here are the features that were chosen to be used in building the model and a short explanation why and the way it is processed in the code:
 
 -imdb_id: as a unique identifier for the movie given from IMDB, is used for removing duplicates in the dataset
+
 -belongs_to_collection: tells if the movie is part of a collection and which one, this feature is transformed from object to 1 or 0, 1 if it is part of a collection and 0 otherwise, this is an important feature because movies that are part of a collection tend to make more money (ex. famous collections: Harry Potter, Star Wars etc.)
+
 -budget: is the amount of money available for making the movie, it is chosen as a feature because the budget often effects the quality of movie
+
 -genres: is a list of objects stating to which genre the movie belongs (it can be to one or more). This column is removed and at end it is added one column per genre so we can represent the movie that belongs to more genres. The movie has a 0 or 1 for each column of the genres depending whether it belongs or not
+
 -homepage: is the official page of the movie, it is translated to 0 and 1 whether it has or not. The movies that have homepage tend to make more money
+
 -original_language: is the main language used in the movie, most of the time is English as a general most used language. Each language is transformed to number and then that number is convert to binary representation of the number
+
 -popularity: represents the rating by imdb based on the searches and visits.
+
 -production_companies: here there is one or more companies given as objects. If there is more than one production company, then they are ordered based on they id the represents how important and popular that company is. The id number is then translated to binary
+
 -production_countries: the country where the movie is produced in, it is done a mapping for the shortcuts of the countries with numbers and then those numbers are translated to binary
+
 -release_date: the date the movie is released. From here only the year is taken into account. It is divided in periods let say from 1940 to 2960 and so on. Because now we are watching more movies that in the past 
+
 -runtime: the length of time of the movie. It is also divided in intervals a good movie is usually between 90min and 120min
+
 -status: whether the film is released or is still in making
+
 -crew: members of the crew -director, actors etc. Here the number of the crew is taken into account the more people the crew has the better the film will be, so as a result it will make more revenue
+
 -revenue: how much money the movie makes, this is also the column that will be predicted in this problem
 
--the following columns are dropped:
-‘original_title’, 'tagline', 'title', 'Keywords', 'cast', 'overview', 'poster_path', 'spoken_languages'
+The following columns are dropped:
+-‘original_title’, 'tagline', 'title', 'Keywords', 'cast', 'overview', 'poster_path', 'spoken_languages'
 
  
 
 3.	The model:
+
 -before I started with building the model, I searched for other problems solved using regression as part of the supervised learning, so from there I decided to use the following techniques 
+
 - Sequential model from Keras library, is used for creating deep learning model
+
 - it has two dense layers with 8 units each
+
 -and one output layer that returns a single continues value
+
 -the dataset is divided to train and test, 0.7 and 0.3 accordingly
 
 a)	for training the model, model.fit function is used also from Keras library, which trains the model for a fixed number of epochs (the iterations on the dataset)
