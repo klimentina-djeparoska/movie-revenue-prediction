@@ -5,7 +5,7 @@ Dataset: https://www.kaggle.com/c/tmdb-box-office-prediction/data
  
 TMDB Box Office Prediction
 
-1.	Abstraction
+### 1.	Abstraction
 
 Today, movies are getting more and more attention and grow in popularity. From comedy to science fiction they serve people as entertainment in their everyday life.
 
@@ -14,7 +14,7 @@ Because the problem I will be trying to solve is prediction of a real value for 
 
 
  
-2.	Choosing features and preprocessing the data
+### 2.	Choosing features and preprocessing the data
 
 The available features from the Movies database are: 
 - 'id', 'belongs_to_collection', 'budget', 'genres', 'homepage', 'imdb_id', 'original_language', 'original_title', 'overview', 'popularity', 'poster_path', 'production_companies', 'production_countries', 'release_date', 'runtime', 'spoken_languages', 'status', 'tagline', 'title', 'Keywords', 'cast', 'crew', 'revenue'. 
@@ -54,7 +54,7 @@ The following columns are dropped:
 
  
 
-3.	The model:
+### 3.	The model:
 
 -before I started with building the model, I searched for other problems solved using regression as part of the supervised learning, so from there I decided to use the following techniques 
 
@@ -76,7 +76,7 @@ d)	after evaluation of the model the MAE for the test data is between 1.900 to 5
 
 
 
-4.	Adjusting parameters and testing
+### 4.	Adjusting parameters and testing
 
 
 -	For the number of neurons used in each processing layer in the model, I used 8 neurons per layer. The reason why I didn’t used more is because I already had 32 features (each genre is represented as a separate column) so adding more neurons would have resulted with the curse of dimensionality
@@ -94,7 +94,7 @@ d)	after evaluation of the model the MAE for the test data is between 1.900 to 5
 
 
 
-5.	Summary
+### 5.	Summary
 
 The final model build, with all the adjustments and testing done gave the following results:
 
